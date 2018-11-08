@@ -1,0 +1,190 @@
+@media screen and (max-width: 640px){
+*{
+    box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
+img{
+	max-width: 100%;
+}
+header {
+  height: 67px;
+  width: 100%;
+  background-color: rgba(50, 255, 50, 0.8);
+  position:fixed;
+  z-index:10;
+}
+body {
+  margin: 0;
+}
+footer{
+  height:67px;
+  margin-top:200px;
+  background-color: rgba(50, 255, 50, 0.8);
+}
+
+
+.container {
+  width: 100%;
+  padding: 0 15px;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+.header-left {
+  margin-top: 20px;
+  font-size: 25px;
+  float: left;
+}
+
+.header-left a{
+	font-size: 18px;
+	color: black;
+	font-weight: bold;	
+}
+.logo img{
+  position: fixed;
+  float: right;
+  width: 30vw;
+}
+footer img{
+  height: 5vh;
+  width: 10vh;
+}
+
+.facebook {
+  background-color: #3b5998;
+}
+
+.twitter {
+  background-color: #55acee;
+}
+.btn {				
+  color: white;
+  display: block;
+  padding: 0 3px;
+  opacity: 0.8;
+  border-radius: 4px;
+  margin-top: 3px;
+
+}	
+	
+
+.btn:hover {
+  opacity: 1;
+}
+
+.btn-wrapper {
+  margin: 20px 0;
+  float: right;
+}
+
+#nav{
+	list-style: 	none;	
+	display: flex;
+}
+.gNavi #nav{
+	background-color:rgba(34, 49, 52, 0.9);	
+	padding: 0;
+	position: absolute;
+	top: 520px;
+}
+
+.gNavi li{
+  line-height: 20px;
+  text-align: center;	
+}
+.gNavi a{
+  color: black;
+}
+
+.gNavi li a{
+  color: white; 
+  padding:0 7px;	
+  margin: 2px 0
+}
+
+.gNavi li a:hover{
+  color: yellow;
+  background-color: rgba(34, 49, 52, 0.5);
+  font-size: 16px;
+}
+
+.top-wrapper {
+  width: 100vw; 
+  height: 25vh; 
+  padding-top:50px;
+  /*background:linear-gradient(-135deg,#E4A972,#9941D8);*/
+  margin-top: 0 auto;
+}
+.top-wrapper p{
+  z-index: 1;
+  background-image: url(/img/img3.jpg);
+}
+
+.heading h1{
+  padding: 0.5em 0;
+  color: #222222;
+  background-color: #ffdead;
+}
+.Change{
+  height: 60vh;
+  padding:60px 0;
+  text-align: center;
+}
+
+.Change p{
+  font-size:16px;
+  line-height: 1.5em;
+  background-color: #f7f7f7;
+  padding: 0 30px;
+}
+
+#slideShow {
+   width:  100vw; /* 画像の横幅に合わせて記述 */
+   height: 25vh; /* 画像の高さに合わせて記述 */
+   position: absolute;
+}
+#slideShow img {
+   width:  100vw; 
+   height: 25vh; 
+   z-index: 8;
+   opacity: 0.0;
+   object-fit: cover;
+   position: absolute;
+}
+
+#slideShow img.active {
+   z-index: 10;
+   opacity: 1.0;
+}
+#slideShow img.last-active 
+   z-index: 9;
+   
+}
+
+.map{
+	height: 40vh;
+	width: 100%;
+}
+#output{
+  height: 40vh;
+  width:80vw;
+  overflow:auto;
+  background-color: #EAEAE0;
+  margin: 0 auto;
+  text-align: left;
+}
+
+
+.heading h1{
+	font-size: 20px;
+}
+}
+@media (orientation: landscape){
+	.gNavi #nav{		
+		top: 300px;
+		left:220px;
+	}
+
+}
